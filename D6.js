@@ -412,21 +412,19 @@ const movies = [
 //          return oldMovie.Title
      
 //     }
-// console.log(olderMovie(movies))
-// const olderMovie = function(movies){
-//             for (let i=0;i<movies.length;i++){
-//                 for (let j=0; j=="Year"; j++){
-//                 let oldMovie = movies[0].Year
-//                 if (parseInt(oldMovie.Year) > parseInt(movies[i].Year)){
-//                 oldMovie = movies[i].Year
-//                 }
-//                 return oldMovie.Title
-//             }  
-//     }
+const olderMovie = function(movies){
+  let oldMovie = movies[0].Year
+          for (let i=0;i<movies.length;i++){
 
-// }
-//console.log(olderMovie(movies))
-//
+          if (parseInt(oldMovie.Year) > parseInt(movies[i].Year)){
+              oldMovie = movies[i].Year
+          }
+   }
+      return oldMovie.Title
+
+ }
+console.log(olderMovie(movies))
+
 
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
@@ -463,7 +461,11 @@ const countMovies = function(x){
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
 */
 // const sumAllTheYears = function(x){
-//     for 
+//     let sum = 0 
+//     for (let i =0; i<x.length;i++){
+//       let 
+//       }
+//     }
 // }
 
 /* Ex.18
