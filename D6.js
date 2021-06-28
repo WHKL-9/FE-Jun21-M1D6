@@ -426,7 +426,7 @@ const movies = [
 
 // }
 //console.log(olderMovie(movies))
-
+//
 
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
