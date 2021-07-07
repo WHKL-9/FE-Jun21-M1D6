@@ -242,6 +242,9 @@ const whatDayIsIt = function(){
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
+const howManyDays = function (x){
+  return 
+}
 
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
@@ -278,6 +281,11 @@ const movies = [
 /* Ex.11
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
+const deleteProp = function (obj, str){
+  delete ob[str]
+  return obj
+}
+
 
 
 
@@ -401,17 +409,6 @@ const movies = [
 
 //function for ex 12 not working - only gets undefined back 
 
-//  const olderMovie = function(movies){
-//      let oldMovie = movies[0].Year
-//              for (let i=0;i<movies.length;i++){
-        
-//              if (movies[i].Year < movies[i+1].Year){
-//                  oldMovie = movies[i].Year
-//              }
-//       }
-//          return oldMovie.Title
-     
-//     }
 const olderMovie = function(movies){
   let oldMovie = movies[0].Year
           for (let i=0;i<movies.length;i++){
@@ -421,8 +418,8 @@ const olderMovie = function(movies){
           }
    }
       return oldMovie
-
  }
+
 //  for testing
 // console.log(olderMovie(movies))
 
@@ -472,6 +469,13 @@ const countMovies = function(x){
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
+const searchByTitle = function(x){
+  for(let i =0;i<x.length;i++){
+    if (movies[i].includes(x)){
+      return movies[i]
+    }
+  }
+}
 
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
